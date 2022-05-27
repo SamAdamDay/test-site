@@ -8,3 +8,15 @@ layout: home
 # Test page
 
 Hello world!
+
+<div id="box" style="width:200px; height:200px"></div>
+
+<script>
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key == " ") {
+            document.getElementById("box").style.backgroundColor = "red";
+        }
+    })
+
+</script>
