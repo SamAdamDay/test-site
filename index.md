@@ -13,9 +13,16 @@ Hello world!
 
 <script>
 
+    boxElement = document.getElementById("box")
+
     document.addEventListener("keydown", (event) => {
         if (event.key == " ") {
-            document.getElementById("box").style.backgroundColor = "red";
+            if (box.style.backgroundColor == "red") {
+                box.style.backgroundColor = "white"
+            }
+            else {
+                box.style.backgroundColor = "red"
+            }
         }
     })
 
